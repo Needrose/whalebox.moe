@@ -1,0 +1,147 @@
+p {
+    font-size:25px;
+}
+
+body {
+    font-family: "Helvetica";
+    background-color: #f1f4fa;
+    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+}
+
+.desc {
+    padding-bottom: 20px;
+}
+
+.discord-login {
+    background-color: #5865F2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form.dz-clickable {
+
+	width: 650px;
+	border: 3px solid #8894b1;
+	border-radius: 12px;
+	background-color: #ccd6ed;
+	cursor: pointer;
+    padding-top: 50px;
+	padding-bottom: 75px;
+
+}
+
+form.dz-clickable:hover {
+
+	background-color: #bccae6;
+	text-decoration: none;
+	outline: none;
+	transition: background-color 250ms linear;
+
+}
+
+div.dz-default {
+
+	color: #687592;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 30px;
+
+}
+
+div.dz-message {
+
+	font-size: 24px;
+
+}
+
+.list {
+    margin-top: 30px;
+    width: 650px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid #8894b1;
+    border-radius: 12px;
+    background-color: #bccae6;
+    color: #687592;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.progress {
+    width: 80%;
+    height: 12px;
+    background: rgba(0,0,0,0.08);
+    border-radius: 8px;
+    margin: 12px auto 0 auto;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #5b8def, #3b6fd6);
+    width: 0%;
+    transition: width 150ms linear;
+}
+
+.copy-btn {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 8px 12px;
+    background: #8894b1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.copy-btn:active { transform: translateY(1px); }
+
+.file-box {
+    width: 90%;
+    margin: 12px auto 0 auto;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e3eafc;
+    border: 1px solid rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.file-info {
+    font-size: 16px;
+    color: #2b3b58;
+}
+
+.file-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-actions a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.checkbox-center {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    margin: 8px auto;
+}

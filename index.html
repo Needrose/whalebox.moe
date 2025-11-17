@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <title>WhaleBox</title>
+  <meta property="og:title" content="WhaleBox" />
+  <meta property="og:description" content="A private storage platform for people who like whales." />
+  <meta property="og:image" content="https://s3.whalebox.moe/whalebox.png" />
+  <meta property="og:url" content="https://whalebox.moe/" />
+  <meta name="theme-color" content="#4FA5FB">
+</head>
+<body>
+  <header>
+    <button class="discord-login" id="loginBtn" onclick="window.location.href='https://api.whalebox.moe/auth/login'">
+      <img src="/svgs/discord.svg" alt="Discord logo" style="height:1em; vertical-align:middle;">
+      Login with Discord
+    </button>
+    <img id="logo" alt="logo" style="margin:auto; display: block;">
+    <script>
+      const images = [
+        "/images/whaleshark-logo.png",
+        "/images/killerwhale-logo.png"
+      ];
+
+      const randomIndex = Math.floor(Math.random() * images.length);
+      const randomImage = images[randomIndex];
+
+      document.getElementById("logo").src = randomImage;
+    </script>
+  </header>
+
+  <center>
+    <div class="desc">
+      <p>A private storage platform for people who like whales.</p>
+    </div>
+  </center>
+  <center>
+    <div style="margin-top:20px;">
+      <form class="dz-clickable" id="dropzone" action="#" onsubmit="return false;">
+        <div class="dz-default dz-message">Drop or select files</div>
+        <input type="file" id="fileInput" style="display:none;" multiple />
+      </form>
+      <div id="status" style="margin-top:8px;color:#475569;"></div>
+    </div>
+  </center>
+
+  <script src="/js/app.js"></script>
+</body>
+</html> 
