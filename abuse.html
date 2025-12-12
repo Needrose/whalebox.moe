@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/style.css">
+	<title>Abuse - WhaleBox</title>
+	<meta property="og:title" content="WhaleBox" />
+	<meta property="og:description" content="A private storage platform for people who like whales." />
+	<meta property="og:image" content="https://s3.whalebox.moe/whalebox.png" />
+	<meta property="og:url" content="https://whalebox.moe/" />
+	<meta name="theme-color" content="#4FA5FB">
+</head>
+<body>
+	<header>
+		<button class="discord-login" id="loginBtn" onclick="window.location.href='https://api.whalebox.moe/auth/login'">
+			<img src="/svgs/discord.svg" alt="Discord logo" style="height:1em; vertical-align:middle;">
+			Login with Discord
+		</button>
+		<img id="logo" alt="logo" style="margin:auto; display: block;">
+		<script>
+			const images = [
+				"/images/whaleshark-logo.png",
+				"/images/killerwhale-logo.png"
+			];
+
+			const randomIndex = Math.floor(Math.random() * images.length);
+			const randomImage = images[randomIndex];
+
+			document.getElementById("logo").src = randomImage;
+		</script>
+	</header>
+
+	<center>
+		<main style="max-width:900px; margin:40px auto; text-align:left; font-size:1.1em;">
+            <p style="font-size: 18px; line-height: 1.5; color: #222; max-width: 800px; margin: auto;">
+                <span style="font-size: 25px; font-weight: 600;">Report Abuse</span><br><br>
+
+                If there is a file hosted on Whalebox that violates our Terms of Service or is your own copyrighted content, please report it to us by emailing <span style="font-weight:600;">absue@whalebox.moe</span> with the following information:<br><br>
+                1. The URL of the file.<br>
+                2. Why the file violates our Terms of Service or proof of your ownership of the copyrighted content.<br>
+                3. A request to remove the file.<br><br>
+
+                We will review your report as soon as possible and if we verify that the file violates our Terms of Service or is copyright, it will be removed and the uploader may get banned (depending on the severity of the violation).<br><br>
+            </p>
+		</main>
+	</center>
+
+	<center>
+		<footer style="margin-top:40px; font-size:0.9em;">
+            <a href="/">Home</a> |
+			<a href="/tos">Terms of Service</a> | 
+			<a href="/privacy">Privacy Policy</a> | 
+			<a href="/abuse">Report Abuse</a>
+		</footer>
+	</center>
+
+	<script src="/js/app.js"></script>
+</body>
+</html>
+
