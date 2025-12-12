@@ -1,11 +1,7 @@
-p {
-    font-size:25px;
-}
-
 body {
     font-family: "Helvetica";
     background-color: #f1f4fa;
-    background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
+    background-image: url("../images/az-subtle.png");
 }
 
 .desc {
@@ -144,4 +140,26 @@ div.dz-message {
     justify-content: center;
     width: 650px;
     margin: 8px auto;
+}
+
+a, a:link {
+    color: #1e3a8a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3b6fd6;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #5b8def;
+}
+
+footer a {
+    color: #475569;
+}
+
+footer a:hover {
+    color: #1e3a8a;
 }
